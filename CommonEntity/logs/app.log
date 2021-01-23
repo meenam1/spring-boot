@@ -1,0 +1,28 @@
+2021-01-23 20:06:59,568 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22h47m17s200ms796µs900ns).
+2021-01-23 20:07:01,879 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-01-23 20:07:01,906 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-01-23 20:07:16,960 INFO com.entity.CommonEntityApplication [restartedMain] Starting CommonEntityApplication using Java 11.0.9 on HDL014788 with PID 14000 (D:\java_learnings\CommonEntity\target\classes started by meenakshi_m in D:\java_learnings\CommonEntity)
+2021-01-23 20:07:16,966 DEBUG com.entity.CommonEntityApplication [restartedMain] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-23 20:07:16,968 INFO com.entity.CommonEntityApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-01-23 20:07:22,383 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-23 20:07:22,384 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-01-23 20:07:22,384 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-23 20:07:22,751 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-01-23 20:07:23,435 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-01-23 20:07:23,951 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-01-23 20:07:24,092 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-23 20:07:24,232 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-23 20:07:24,621 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-23 20:07:24,968 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-01-23 20:07:26,953 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-23 20:07:29,205 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-23 20:07:29,843 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-01-23 20:07:29,894 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2021-01-23 20:07:29,930 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2021-01-23 20:07:30,063 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2021-01-23 20:07:30,436 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: exportUsingGET_1
+2021-01-23 20:07:30,528 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: exportUsingGET_2
+2021-01-23 20:07:30,673 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: exportUsingGET_3
+2021-01-23 20:07:30,741 INFO com.entity.CommonEntityApplication [restartedMain] Started CommonEntityApplication in 15.055 seconds (JVM running for 17.355)
+2021-01-23 20:08:03,532 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-23 20:08:03,676 DEBUG com.entity.controller.AuthorityController [http-nio-8080-exec-2] Hello from Logback {}

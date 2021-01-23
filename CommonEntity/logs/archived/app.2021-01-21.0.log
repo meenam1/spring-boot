@@ -1,0 +1,57 @@
+2021-01-21 09:53:58,093 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h12m15s655ms398µs900ns).
+2021-01-21 11:38:40,515 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m42s109ms707µs100ns).
+2021-01-21 16:12:52,303 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m11s245ms340µs100ns).
+2021-01-21 18:00:51,585 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h3m59s209ms146µs).
+2021-01-21 22:14:56,857 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-01-21 22:14:56,926 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-01-21 22:15:16,700 INFO CommonEntityApplication [restartedMain] Starting CommonEntityApplication using Java 11.0.9 on HDL014788 with PID 5752 (D:\java_learnings\CommonEntity\target\classes started by meenakshi_m in D:\java_learnings\CommonEntity)
+2021-01-21 22:15:16,706 DEBUG CommonEntityApplication [restartedMain] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-21 22:15:16,708 INFO CommonEntityApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-01-21 22:15:22,164 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-21 22:15:22,164 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-01-21 22:15:22,165 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 22:15:22,528 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-01-21 22:15:23,241 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-01-21 22:15:23,729 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-01-21 22:15:23,831 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-21 22:15:23,980 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-21 22:15:24,373 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-21 22:15:24,693 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-01-21 22:15:26,630 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-21 22:15:28,879 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-21 22:15:29,526 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-01-21 22:15:29,577 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2021-01-21 22:15:29,623 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2021-01-21 22:15:29,739 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2021-01-21 22:15:30,138 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: exportUsingGET_1
+2021-01-21 22:15:30,231 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: exportUsingGET_2
+2021-01-21 22:15:30,365 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: exportUsingGET_3
+2021-01-21 22:15:30,437 INFO CommonEntityApplication [restartedMain] Started CommonEntityApplication in 15.051 seconds (JVM running for 17.326)
+2021-01-21 22:22:07,737 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 22:28:01,752 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m36s953ms135µs300ns).
+2021-01-21 22:28:02,673 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-01-21 22:28:02,691 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-01-21 22:28:10,700 INFO CommonEntityApplication [restartedMain] Starting CommonEntityApplication using Java 11.0.9 on HDL014788 with PID 24396 (D:\java_learnings\CommonEntity\target\classes started by meenakshi_m in D:\java_learnings\CommonEntity)
+2021-01-21 22:28:10,705 DEBUG CommonEntityApplication [restartedMain] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-21 22:28:10,706 INFO CommonEntityApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-01-21 22:28:16,266 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-21 22:28:16,267 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-01-21 22:28:16,268 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 22:28:16,748 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-01-21 22:28:17,526 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-01-21 22:28:18,040 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-01-21 22:28:18,195 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-21 22:28:18,432 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-21 22:28:18,927 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-21 22:28:19,378 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-01-21 22:28:21,485 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-21 22:28:23,688 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-21 22:28:24,341 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-01-21 22:28:24,389 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2021-01-21 22:28:24,425 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2021-01-21 22:28:24,559 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2021-01-21 22:28:24,905 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: exportUsingGET_1
+2021-01-21 22:28:24,995 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: exportUsingGET_2
+2021-01-21 22:28:25,101 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: exportUsingGET_3
+2021-01-21 22:28:25,173 INFO CommonEntityApplication [restartedMain] Started CommonEntityApplication in 15.547 seconds (JVM running for 17.692)
+2021-01-21 23:43:33,704 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m45s424ms677µs700ns).
