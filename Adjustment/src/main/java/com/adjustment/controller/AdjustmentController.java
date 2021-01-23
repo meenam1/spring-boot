@@ -1,7 +1,6 @@
 package com.adjustment.controller;
 
 import com.adjustment.model.Adjustment;
-import com.adjustment.pdo.AdjustmentPDO;
 import com.adjustment.service.AdjustmentService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

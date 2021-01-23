@@ -16,44 +16,51 @@ public class AdjustmentService {
 
 
     @Autowired
-    AdjustmentDAO jpaAdjustmentDAO;
+    final AdjustmentDAO jpaAdjustmentDAO;
+
+    public AdjustmentService(AdjustmentDAO jpaAdjustmentDAO) {
+        this.jpaAdjustmentDAO = jpaAdjustmentDAO;
+    }
 
     public void saveAdjustment(Adjustment adjustment) {
         jpaAdjustmentDAO.save(modelToPDO(adjustment));
     }
 
     public Adjustment updateAdjustment(Adjustment adjustment) {
+
+        AdjustmentPDO adjustmentPDO = modelToPDO(adjustment);
+        adjustmentPDO.setId(adjustment.getId());
         jpaAdjustmentDAO.save(modelToPDO(adjustment));
-        return null;
+        return pdoToModel(adjustmentPDO);
     }
 
     public List<Adjustment> findAll() {
 
-        Iterable<AdjustmentPDO> adjustmentPDOS = jpaAdjustmentDAO.findAll();
-        Iterator<AdjustmentPDO> iterator = adjustmentPDOS.iterator();
-        List<Adjustment> result = new ArrayList();
+        final Iterable<AdjustmentPDO> adjustmentPDOS = jpaAdjustmentDAO.findAll();
+        final Iterator<AdjustmentPDO> iterator = adjustmentPDOS.iterator();
+        final List<Adjustment> result = new ArrayList();
         iterator.forEachRemaining(e -> result.add(pdoToModel(e)));
         return result;
     }
 
-    public void saveAllAdjustments(List<Adjustment> entities) {
-        List<AdjustmentPDO> adjustmentPDOS = entities.stream()
+    public void saveAllAdjustments(final List<Adjustment> entities) {
+        final List<AdjustmentPDO> adjustmentPDOS = entities.stream()
                 .map(e -> modelToPDO(e))
                 .collect(Collectors.toList());
         jpaAdjustmentDAO.saveAll(adjustmentPDOS);
     }
 
-    public Adjustment getAdjustmentByID(Integer id) {
+    public Adjustment getAdjustmentByID(final Integer id) {
         return pdoToModel(jpaAdjustmentDAO.findById(id).get());
     }
 
-    public void deleteById(Integer id) {
+    public void deleteById(final Integer id) {
         jpaAdjustmentDAO.deleteById(id);
     }
 
-    private AdjustmentPDO modelToPDO(Adjustment adjustment) {
-        List<AssociatedAppPDO> associatedAppPDOS = new ArrayList<>();
-        AdjustmentPDO adjustmentPDO = AdjustmentPDO.builder()
+    private AdjustmentPDO modelToPDO(final Adjustment adjustment) {
+        final List<AssociatedAppPDO> associatedAppPDOS = new ArrayList<>();
+        final AdjustmentPDO adjustmentPDO = AdjustmentPDO.builder()
                 .id(adjustment.getId())
                 .name(adjustment.getName())
                 .code(adjustment.getCode())
@@ -65,9 +72,9 @@ public class AdjustmentService {
                 .createdAt(adjustment.getCreatedAt())
                 .updatedAt(adjustment.getUpdatedAt())
                 .associatedAppPDOS(associatedAppPDOS).build();
-        List<AssociatedApp> associatedApps = adjustment.getAssociatedApps();
-        for (AssociatedApp associatedApp : associatedApps) {
-            AssociatedAppPDO associatedAppPDO = AssociatedAppPDO.builder()
+        final List<AssociatedApp> associatedApps = adjustment.getAssociatedApps();
+        for (final AssociatedApp associatedApp : associatedApps) {
+            final AssociatedAppPDO associatedAppPDO = AssociatedAppPDO.builder()
                     .id(associatedApp.getId())
                     .name(associatedApp.getName())
                     .percentage(associatedApp.getPercentage())
@@ -79,11 +86,11 @@ public class AdjustmentService {
         return adjustmentPDO;
     }
 
-    private Adjustment pdoToModel(AdjustmentPDO adjustmentPDO) {
-        List<AssociatedApp> associatedApps = new ArrayList<>();
-        List<AssociatedAppPDO> associatedAppPDOs = adjustmentPDO.getAssociatedAppPDOS();
-        for (AssociatedAppPDO associatedAppPDO : associatedAppPDOs) {
-            AssociatedApp associatedApp = AssociatedApp.builder()
+    private Adjustment pdoToModel(final AdjustmentPDO adjustmentPDO) {
+        final List<AssociatedApp> associatedApps = new ArrayList<>();
+        final List<AssociatedAppPDO> associatedAppPDOs = adjustmentPDO.getAssociatedAppPDOS();
+        for (final AssociatedAppPDO associatedAppPDO : associatedAppPDOs) {
+            final AssociatedApp associatedApp = AssociatedApp.builder()
                     .id(associatedAppPDO.getId())
                     .name(associatedAppPDO.getName())
                     .percentage(associatedAppPDO.getPercentage())
@@ -92,7 +99,7 @@ public class AdjustmentService {
             associatedApps.add(associatedApp);
         }
 
-        Adjustment adjustment = Adjustment.builder()
+        final Adjustment adjustment = Adjustment.builder()
                 .id(adjustmentPDO.getId())
                 .name(adjustmentPDO.getName())
                 .code(adjustmentPDO.getCode())
